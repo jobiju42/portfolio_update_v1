@@ -2,16 +2,27 @@
 * { 
   box-sizing: border-box;
 }
-  
+html {
+  background-color: black;
+
+}
+
 body {
   margin: 0;
-  padding: 0;
+  padding: auto;
+  width: 100vw;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
-  display: flex;
-  flex-direction: column;
+  background-color: rgba(254, 252, 254, 0.161);
+  margin-bottom: -50px;
+  padding-bottom: -50px;
+  align-items: stretch;
+}
+
+#wrapper {
+  background-image: url('images/sky_matrix_orb.jpg');
+  background-size: cover;
 }
 /* Link Styles */
 
@@ -59,7 +70,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -78,6 +89,8 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -91,11 +104,12 @@ header .profile-image:hover {
   color: yellow;
 }
 .card {
+  color: orange;
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
+  background: #a316b349;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
@@ -123,9 +137,14 @@ ul.skills {
 }
 
 footer {
-  width: 100%;
+  width: 100vw;
   min-height: 30px;
   padding: 20px 0 40px 20px;
+  background-image: url('images/white_pony_trippin.jpg');
+  background-size: cover;
+  min-height: 25vh;
+  color:#ff9904;
+  
 }
 
 footer .copyright {
@@ -168,6 +187,12 @@ a.social:hover {
 .clearfix {
   clear: both;
 }
+
+.flex {
+  background-color: rgba(0, 255, 255, 0.116);
+}
+
+
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
